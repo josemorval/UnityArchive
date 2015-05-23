@@ -9,7 +9,7 @@ Las cosas en Unity se pintan usando [shaders](http://en.wikipedia.org/wiki/Shade
 
 Nosotros usaremos [Cg](http://en.wikipedia.org/wiki/Cg_(programming_language\)), que es el lenguaje adoptado por Unity como estándar.
 
-```glsl
+```c
 void frag(){
 	return;
 }
