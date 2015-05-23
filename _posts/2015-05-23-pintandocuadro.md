@@ -10,6 +10,12 @@ Las cosas en Unity se pintan usando [shaders](http://en.wikipedia.org/wiki/Shade
 
 Nosotros usaremos [Cg](http://en.wikipedia.org/wiki/Cg_\(programming_language\)), que es el lenguaje adoptado por Unity como estándar. El código que viene a continuación muestra la sintáxis que tiene este lenguaje 
 
+```csharp
+public void Start(){
+	return;
+}
+```
+
 ```glsl
   float4 vert(float4 vertexPos : POSITION) : SV_POSITION {
   return mul(UNITY_MATRIX_MVP, vertexPos);
