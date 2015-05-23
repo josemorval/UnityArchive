@@ -7,7 +7,33 @@ date:   2013-12-23 00:18:23
 ##Hola 
 
 {% highlight cs %}
+
+public int i;
 public void Start(){
 	return;
+}
+{% endhighlight %}
+
+{% highlight java %}
+
+public int i;
+public void Start(){
+	return;
+}
+{% endhighlight %}
+
+{% highlight glsl %}
+
+sampler2D tex;
+void (){
+	
+}
+{% endhighlight %}
+
+{% highlight c %}
+
+sampler2D tex;
+void (){
+	
 }
 {% endhighlight %}
