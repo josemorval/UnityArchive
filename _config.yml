@@ -1,12 +1,12 @@
-name: Jose Moreno
+name: "Jose Moreno"
 baseurl: "/UnityArchive"
-url: http://josermoval.github.io
+url: "http://josermoval.github.io"
 markdown: redcarpet
 pygments: true
-github: https://www.github.com/josemorval/UnityArchive/
-about: I am an independent developer from the sunny UK. I dabble in Ruby, play in C and I'm an avid systems administrator.
+github: https://www.github.com/josemorval/
+about: "I am an independent developer from the sunny UK. I dabble in Ruby, play in C and I'm an avid systems administrator."
 urls:
-    - text: github
-      url: https://github.com/josemorval/UnityArchive/
+    - text: "github"
+      url: "https://github.com/josemorval/UnityArchive/""
     - text: email
       url: mailto:exaem@exaem.co.uk
