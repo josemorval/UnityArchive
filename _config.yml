@@ -2,6 +2,8 @@ name: Simply Grey
 markdown: redcarpet
 pygments: true
 github: https://www.github.com/exaem
+url: http://josermoval.github.io
+baseurl: "/UnityArchive"
 about: I am an independent developer from the sunny UK. I dabble in Ruby, play in C and I'm an avid systems administrator.
 urls:
     - text: github
