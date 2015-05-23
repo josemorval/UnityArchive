@@ -1,31 +1,57 @@
----
-title: 'This is my Site Title'
----
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Site Title {% if page.url != '/index.html' %}| {{page.title}}{% endif %}</title>
-  <meta charset='UTF-8'/>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <link rel='alternate' type='application/rss+xml' title='RSS' href='SITEURLGOESHERE/blog.rss' />
-  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
-  <link href='{{site.baseurl}}/css/styles.css' rel='stylesheet' />
-</head>
-<body>
-  <div class='container'>
-    <div class='col12 clearfix'>
-      <div class='header col6 margin3 pad4h'>
-        <div class='clearfix col12'>
-          <div class='menu fr'>
-            <a class='{% if page.section == "blog" %}active{% endif %}' href='{{site.baseurl}}/'>Blog</a>
-            <a class='{% if page.url == "about/" %}active{% endif %}' href='{{site.baseurl}}/about'>About</a>
-            <a href='//github.com/prose/starter'>Fork on GitHub</a>
-          </div>
-          <h1 class='title'><a href='{{site.baseurl}}/'>{{page.title}}</a></h1>
-        </div>
-      </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/ie.css">
+    <![endif]-->
+    <link href="{{ ASSET_PATH }}/css/styles.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/pygment_trac.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/respond.js"></script>
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own img
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <body>
+
+    <div id="header">
+      <nav>
+        <li class="title"><h1><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1></li>
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+        {% include JB/pages_list %}
+      </nav>
     </div>
-    {{content}}
-  </div>
-  <script src='{{site.baseurl}}/site.js'></script>
-</body>
+
+    <div class="wrapper">
+
+      <div class="content">
+        {{ content }}
+      </div>
+
+      <footer>
+        <p>&copy; {{ site.author.name }} 2012
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+    {% include JB/analytics %}
+  </body>
+</html>

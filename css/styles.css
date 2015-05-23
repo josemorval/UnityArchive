@@ -329,7 +329,7 @@ ul {
 }
 
 /*
- * Corrects list images handled incorrectly in IE7
+ * Corrects list img handled incorrectly in IE7
  */
 nav ul,
 nav ol {
@@ -604,7 +604,7 @@ a small {
 }
 
 ul {
-  list-style-image: url("../images/bullet.png");
+  list-style-image: url("../img/bullet.png");
 }
 
 strong {
@@ -689,7 +689,7 @@ hr {
   border: 0;
   outline: none;
   height: 3px;
-  background: transparent url("../images/hr.gif") center center repeat-x;
+  background: transparent url("../img/hr.gif") center center repeat-x;
   margin: 0 0 20px;
 }
 
@@ -706,7 +706,7 @@ dt {
   height: 65px;
   width: 100%;
   position: fixed;
-  background: url(../images/nav-bg.gif) #353535;
+  background: url(../img/nav-bg.gif) #353535;
   border-bottom: 4px solid #434343;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
@@ -747,6 +747,7 @@ dt {
   background-color: #93bd20;
   padding: 10px 12px;
   margin-top: 6px;
+  margin-right: 10px;
   line-height: 14px;
   font-size: 14px;
   display: inline-block;
@@ -764,18 +765,62 @@ dt {
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
 }
+#header nav li {
+  float: right;
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  list-style: none;
+  display: inline;
+  color: white;
+  line-height: 50px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+#header nav li.title a {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(transparent, transparent);
+  background: -moz-linear-gradient(transparent, transparent);
+  background: -o-linear-gradient(transparent, transparent);
+  background: linear-gradient(transparent, transparent);
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2em;
+  color: gray;
+}
+#header nav li.title a:hover {
+  background: transparent;
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 #header nav li.fork {
   float: left;
-  margin-left: 0px;
+  margin-left: 0;
 }
 #header nav li.downloads {
   float: right;
   margin-left: 6px;
 }
 #header nav li.title {
-  float: right;
+  float: left;
   margin-right: 10px;
-  font-size: 11px;
+}
+
+#tags li {
+  display: inline;
 }
 
 section {
