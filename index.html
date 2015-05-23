@@ -1,53 +1,18 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Unityarchive by josemorval</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+---
+layout: default
+section: blog
+---
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/josemorval/UnityArchive">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/josemorval/UnityArchive/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/josemorval/UnityArchive/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+<div class='listing col6 pad4h margin3'>
+  {% for item in site.categories.blog limit:1000 %}
+    {% capture date %}{{ item.date | date: '%B %Y' }}{% endcapture %}
+    {% capture ndate %}{{ item.next.date | date: '%B %Y' }}{% endcapture %}
 
-    <div class="wrapper">
+    {% if date != ndate %}
+      <h4 class='month'>{{item.date | date: '%B %Y'}}</h4>
+    {% endif %}
+    <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}} <span class='date'>&#126; {{item.date | date:"%b %d"}}</span></a>
+  {% endfor %}
+</div>
 
-      <section>
-        <div id="title">
-          <h1>Unityarchive</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/josemorval">josemorval</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
-        <hr>
-
-<h3>
-<a id="ideas" class="anchor" href="#ideas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ideas</h3>
-
-<p>In this blog I'll put some ideas on Unity, mostly shader things. This is basically for me, an attempt to organize what I've learned about this wonderful engine.</p>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-</html>
+{% include rss-link.html %}
