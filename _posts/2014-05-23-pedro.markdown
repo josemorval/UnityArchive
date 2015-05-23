@@ -1,19 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Simply Grey"
-date:   2013-12-23 00:18:23 
+title: Welcome to Simply Grey
+date: {}
+published: true
 ---
 
+
 ##Hola 
-
-{% highlight cs %}
-
-public int i;
-public void Start(){
-	return;
-}
-{% endhighlight %}
-
 {% highlight java %}
 
 public int i;
