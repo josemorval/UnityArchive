@@ -1,4 +1,6 @@
 name: Jose Moreno
+baseurl: "/UnityArchive"
+url: http://josermoval.github.io
 markdown: redcarpet
 pygments: true
 github: https://www.github.com/josemorval/UnityArchive/
