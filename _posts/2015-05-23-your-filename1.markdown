@@ -1,9 +1,7 @@
 ---
 published: true
+title: ey
 ---
-
-
-
 
 ## A New Post
 
