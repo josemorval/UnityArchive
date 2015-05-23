@@ -5,6 +5,8 @@ title: ey
 
 ---
 layout: post
+title:  "Welcome to Simply Grey"
+date:   2013-12-23 00:18:23 
 ---
 
 ## A New Post
