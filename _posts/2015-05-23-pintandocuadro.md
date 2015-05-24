@@ -22,7 +22,6 @@ float4 vert(float4 vertexPos : POSITION) : SV_POSITION
 }
 ```
 
-
 y de fragment shader sería
 
 ```c
