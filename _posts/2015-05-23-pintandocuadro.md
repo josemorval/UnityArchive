@@ -38,8 +38,9 @@ Este programa pintaría el triángulo, sobre el que esté actuando, de color ```
 
 ##Vamos a lo práctico: llevando esto a Unity
 
-Abrimos un nuevo proyecto en Unity y creamos dos objetos en nuestra carpeta de **Assets**, un **shader** y un **material**. Los materiales son, a grandes rasgos, contenedores de shader. 
+Abrimos un nuevo proyecto en Unity y creamos dos objetos en nuestra carpeta de **Assets**, un **shader** y un **material**, y arrastrasmos el shader al material (los materiales son básicamente contenedores de shaders). 
 
-Además de lo anterior creamos un **Quad**, una geometría que se compone de dos triángulos que forman un cuadrado, es decir, la geometría _casi_ más simple que podemos llegar a formar. 
+Además de lo anterior creamos un **Quad**, una geometría que se compone de dos triángulos los cuales a su vez forman un cuadrado, es decir, la geometría _casi_ más simple que podemos llegar a formar. 
 
-![_config.yml]({{ site.baseurl }}/images/basic02.png) ![_config.yml]({{ site.baseurl }}/images/basic03.png)
+Con esto c
+![_config.yml]({{ site.baseurl }}/images/basic01.png)
