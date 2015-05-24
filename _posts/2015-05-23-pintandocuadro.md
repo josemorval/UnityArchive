@@ -35,4 +35,6 @@ Este programa pintaría el triángulo, sobre el que esté actuando, de color ```
 
 ##Vamos a lo práctico: llevando esto a Unity
 
+Abrimos un nuevo proyecto en Unity
+
 
