@@ -20,3 +20,12 @@ float4 vert(float4 vertexPos : POSITION) : SV_POSITION
 	return mul(UNITY_MATRIX_MVP, vertexPos);
 }
 ```
+
+y de fragment shader
+
+```c
+float4 frag(void) : COLOR
+{
+	return float4(1.0, 0.0, 0.0, 1.0); 
+}
+```
