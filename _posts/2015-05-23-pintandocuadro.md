@@ -90,3 +90,8 @@ Si guardamos el shader debería verse algo parecido a lo que sigue
 
 ![_config.yml]({{ site.baseurl }}/images/basic02.png)
 
+Moviendo el quad que tiene el material asignado, en la pestaña **Scene**, observamos como el renderizado de la escena en la pestaña **Game** cambia acorde este movimiento. Internamente, sabemos lo que esta pasando: los vértices del quad se están moviendo en el espacio, y por tanto los triángulos que generan, y como consecuencia final, la parte que _colorea_ el shader va cambiando.
+
+<iframe src="https://player.vimeo.com/video/43730150" width="500" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/43730150">Traveling waves 1</a> from <a href="https://vimeo.com/user10482142">jose morval</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+Este ejemplo, aunque es muy simple, deja entrever la potencia que hay detrás de los shader.
