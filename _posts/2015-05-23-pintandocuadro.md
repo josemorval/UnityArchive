@@ -4,7 +4,6 @@ title: Pintando un cuadro
 published: true
 ---
 
-
 ##Empezando por lo básico
 
 Las cosas en Unity se pintan usando [shaders](http://en.wikipedia.org/wiki/Shader): pequeños programas que le dicen a la tarjeta gráfica cómo pintar las cosas en la pantalla. 
