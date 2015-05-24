@@ -38,6 +38,6 @@ Este programa pintaría el triángulo, sobre el que esté actuando, de color ```
 
 ##Vamos a lo práctico: llevando esto a Unity
 
-Abrimos un nuevo proyecto en Unity 
+Abrimos un nuevo proyecto en Unity y creamos dos objetos en nuestra carpeta de **Assets**, un **shader** y un **material**. Los materiales son, a grandes rasgos, contenedores de shader. 
 
 ![_config.yml]({{ site.baseurl }}/images/basic01.png)
