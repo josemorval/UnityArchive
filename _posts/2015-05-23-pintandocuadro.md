@@ -22,4 +22,4 @@ Un ejemplo básico de vertex shader sería
       return mul(UNITY_MATRIX_MVP, vertexPos);
   }
 ```
-donde `vertexPos`
+
