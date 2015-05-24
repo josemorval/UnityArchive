@@ -81,5 +81,8 @@ La mayoría de este código lo hemos visto y es lo importante. El resto es la _c
 
 - Todo fichero de shader empieza por ```Shader``` seguido, si se quiere, de un nombre.
 - Luego definimos los llamados ```Subshader```. En ocasiones es necesario escribir varios Subshader teniendo en consideración la tarjeta gráfica que lo va a ejecutar. Si tu shader produce un efecto especial espectacular que solo puede ejecutarse en un tipo de tarjeta gráfica, es justo añadir para el resto de tarjetas gráficas un efecto más modesto. 
+- Por último tenemos las pasadas ```Pass```. Dependiendo del efecto deseado, nuestro shader puede requerir aplicar cierto efecto y posteriormente otro sobre lo renderizado anteriormente.
+
+De todas maneras, para una comprensión completa de este tema, lo mejor es echarle un ojo a la documentación de Unity sobre [este tema](http://docs.unity3d.com/460/Documentation/Manual/ShadersOverview.html).
 
 
