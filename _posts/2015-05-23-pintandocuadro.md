@@ -52,7 +52,7 @@ En la imagen de la izquierda puede verse una esfera roja. Eso es porque ya esta 
 
 Vamos a escribir el shader. Para ello editamos el (fichero) shader que hemos creado antes y escribimos lo siguiente
 
-```c
+```csharp
 Shader "Morvaly/BasicShader" { 
    SubShader { 
       Pass {
