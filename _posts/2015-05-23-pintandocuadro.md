@@ -46,6 +46,6 @@ La cámara que tenemos en escena y el quad tienen que quedar configurados de la 
 
 ![_config.yml]({{ site.baseurl }}/images/basic01.png)
 
-Lo más importante es que el quad tenga asignado el material que acabamos de crear (arrastrando el material al **Inspector** del quad o bien yendo **Materiales** dentro del **Mesh Renderer** y asignándolo.
+Lo más importante es que el quad tenga asignado el material que acabamos de crear (arrastrando el material al **Inspector** del quad o bien yendo a **Materiales** dentro del **Mesh Renderer** y asignarlo como material.
 
 Como puede observarse en la imagen 
