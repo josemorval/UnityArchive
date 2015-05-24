@@ -48,4 +48,30 @@ La cámara que tenemos en escena y el quad tienen que quedar configurados de la 
 
 Lo más importante es que el quad tenga asignado el material que acabamos de crear (arrastrando el material al **Inspector** del quad o bien yendo a **Materiales** dentro del **Mesh Renderer** y asignarlo como material.
 
-Como puede observarse en la imagen 
+En la imagen de la izquierda puede verse una esfera roja. Eso es porque ya esta escrito el shader y Unity puede mostrar una previsualización de lo que va a renderizar.
+
+Vamos a escribir el shader. Para ello editamos el (fichero) shader que hemos creado antes y escribimos lo siguiente
+
+```c
+Shader "Morvaly/BasicShader" { 
+   SubShader { 
+      Pass {
+         CGPROGRAM 
+         #pragma vertex vert 
+         #pragma fragment frag
+ 
+         float4 vert(float4 vertexPos : POSITION) : SV_POSITION 
+         {
+            return mul(UNITY_MATRIX_MVP, vertexPos);
+         }
+ 
+         float4 frag() : COLOR
+         {
+            return float4(1.0, 0.0, 0.0, 1.0); 
+         }
+ 
+         ENDCG 
+      }
+   }
+}
+```
