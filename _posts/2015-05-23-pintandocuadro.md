@@ -43,5 +43,9 @@ Abrimos un nuevo proyecto en Unity y creamos dos objetos en nuestra carpeta de *
 Además de lo anterior creamos un **Quad**, una geometría que se compone de dos triángulos los cuales a su vez forman un cuadrado, es decir, la geometría _casi_ más simple que podemos llegar a formar. 
 
 La cámara que tenemos en escena y el quad tienen que quedar configurados de la siguiente manera
+
 ![_config.yml]({{ site.baseurl }}/images/basic01.png)
-Lo más importante es que el quad tenga asignado el material que acabamos de crear. 
+
+Lo más importante es que el quad tenga asignado el material que acabamos de crear (arrastrando el material al **Inspector** del quad o bien yendo **Materiales** dentro del **Mesh Renderer** y asignándolo.
+
+Como puede observarse en la imagen 
