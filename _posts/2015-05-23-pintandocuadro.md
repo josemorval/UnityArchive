@@ -8,6 +8,7 @@ published: true
 
 
 
+
 Las cosas en Unity se pintan usando [shaders](http://en.wikipedia.org/wiki/Shader): pequeños programas que le dicen a la tarjeta gráfica cómo pintar las cosas en la pantalla. 
 
 Estos programas se pueden escribir en distintos lenguajes ([GLSL](http://en.wikipedia.org/wiki/OpenGL_Shading_Language), [HLSL](http://en.wikipedia.org/wiki/High-Level_Shading_Language), etc...), y en el caso particular de Unity se usa [Cg](http://en.wikipedia.org/wiki/Cg_\(programming_language\)), como lenguaje de gráficos estándar.
@@ -83,6 +84,9 @@ La mayoría de este código lo hemos visto y es lo importante. El resto es la _c
 - Luego definimos los llamados ```Subshader```. En ocasiones es necesario escribir varios Subshader teniendo en consideración la tarjeta gráfica que lo va a ejecutar. Si tu shader produce un efecto especial espectacular que solo puede ejecutarse en un tipo de tarjeta gráfica, es justo añadir para el resto de tarjetas gráficas un efecto más modesto. 
 - Por último tenemos las pasadas ```Pass```. Dependiendo del efecto deseado, nuestro shader puede requerir aplicar cierto efecto y posteriormente otro sobre lo renderizado anteriormente.
 
-De todas maneras, para una comprensión completa de este tema, lo mejor es echarle un ojo a la documentación de Unity sobre [este tema](http://docs.unity3d.com/460/Documentation/Manual/ShadersOverview.html).
+De todas maneras, para una comprensión completa de este tema, lo mejor es echarle un ojo a la documentación de Unity sobre [esto](http://docs.unity3d.com/460/Documentation/Manual/ShadersOverview.html).
 
+Si guardamos el shader debería verse algo parecido a lo que sigue
+
+![_config.yml]({{ site.baseurl }}/images/basic02.png)
 
