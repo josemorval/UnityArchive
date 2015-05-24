@@ -42,4 +42,5 @@ Abrimos un nuevo proyecto en Unity y creamos dos objetos en nuestra carpeta de *
 
 Además de lo anterior creamos un **Quad**, una geometría que se compone de dos triángulos que forman un cuadrado, es decir, la geometría _casi_ más simple que podemos llegar a formar. 
 
-![_config.yml]({{ site.baseurl }}/images/basic01.png)
+![_config.yml]({{ site.baseurl }}/images/basic02.png)
+![_config.yml]({{ site.baseurl }}/images/basic03.png)
