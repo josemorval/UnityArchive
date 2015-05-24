@@ -28,7 +28,7 @@ Este programa coge la posición ```vertexPos``` de los vértices del objeto y de
 Por otro lado, un ejemplo de **fragment shader** podría ser
 
 ```c
-float4 frag(void) : COLOR
+float4 frag() : COLOR
 {
 	return float4(1.0, 0.0, 0.0, 1.0); 
 }
