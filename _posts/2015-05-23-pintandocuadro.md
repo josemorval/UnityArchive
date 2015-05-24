@@ -12,8 +12,7 @@ Los shaders se clasifican en dos tipos _básicos_: los [vertex](https://www.open
 
 A nosotros nos basta saber que los _vertex programs_ trabajan con la información geométrica del objeto que queremos pintar (los vértices, entre otras cosas) y los _fragment programs_ colorean los triángulos que forman esos vértices, básicamente.
 
-Un ejemplo básico de `vertex shader` sería
-
+Un ejemplo básico de <div>vertex shader</div> sería
 ```c
 float4 vert(float4 vertexPos : POSITION) : SV_POSITION
 {
