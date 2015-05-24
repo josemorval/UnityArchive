@@ -40,4 +40,6 @@ Este programa pintaría el triángulo, sobre el que esté actuando, de color ```
 
 Abrimos un nuevo proyecto en Unity y creamos dos objetos en nuestra carpeta de **Assets**, un **shader** y un **material**. Los materiales son, a grandes rasgos, contenedores de shader. 
 
+Además de lo anterior creamos un **Quad**, una geometría que se compone de dos triángulos que forman un cuadrado, es decir, la geometría _casi_ más simple que podemos llegar a formar. 
+
 ![_config.yml]({{ site.baseurl }}/images/basic01.png)
