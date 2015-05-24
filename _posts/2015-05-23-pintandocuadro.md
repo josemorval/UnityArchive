@@ -20,7 +20,7 @@ float4 vert(float4 vertexPos : POSITION) : SV_POSITION
 }
 ```
 y de fragment shader sería
-```\c
+```c
 float4 frag(void) : COLOR
 {
 	return float4(1.0, 0.0, 0.0, 1.0); 
