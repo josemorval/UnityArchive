@@ -17,7 +17,7 @@ A nosotros nos basta saber que los _vertex programs_ trabajan con la informació
 
 Un ejemplo básico de **vertex shader** sería
 
-```c
+```csharp
 float4 vert(float4 vertexPos : POSITION) : SV_POSITION
 {
 	return mul(UNITY_MATRIX_MVP, vertexPos);
@@ -27,7 +27,7 @@ Este programa coge la posición ```vertexPos``` de los vértices del objeto y de
 
 Por otro lado, un ejemplo de **fragment shader** podría ser
 
-```c
+```csharp
 float4 frag() : COLOR
 {
 	return float4(1.0, 0.0, 0.0, 1.0); 
@@ -75,3 +75,5 @@ Shader "Morvaly/BasicShader" {
    }
 }
 ```
+
+Vamos a comentar línea por línea este shader.
