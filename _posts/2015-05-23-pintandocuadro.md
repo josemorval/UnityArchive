@@ -78,8 +78,8 @@ Shader "Morvaly/BasicShader" {
 ```
 
 La mayoría de este código lo hemos visto y es lo importante. El resto es la _carcasa_ que usa Unity para entender el shader
+
 - Todo fichero de shader empieza por ```Shader``` seguido, si se quiere, de un nombre.
-- Luego definimos los llamados ```Subshader```. En ocasiones es necesario escribir varios Subshader teniendo en consideración la tarjeta gráfica que lo va a ejecutar. Si tu shader produce un efecto especial espectacular que solo puede ejecutarse en un tipo de tarjeta gráfica, es justo añadir para el resto de tarjetas gráficas un efecto más modesto.
-- 
+- Luego definimos los llamados ```Subshader```. En ocasiones es necesario escribir varios Subshader teniendo en consideración la tarjeta gráfica que lo va a ejecutar. Si tu shader produce un efecto especial espectacular que solo puede ejecutarse en un tipo de tarjeta gráfica, es justo añadir para el resto de tarjetas gráficas un efecto más modesto. 
 
 
