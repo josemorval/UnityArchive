@@ -13,7 +13,7 @@ Estos programas se pueden escribir en distintos lenguajes ([GLSL](http://en.wiki
 
 Los shaders se clasifican en dos tipos _básicos_: los [vertex](https://www.opengl.org/wiki/Vertex_Shader) y los [fragment](https://www.opengl.org/wiki/Fragment_Shader). Para aprender sobre este tema en profundidad os recomiendo [esta página](http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Chapter-2.2:-Shaders.html), en la que se hace una gran introducción del funcionamiento de estos programas.
 
-A nosotros nos basta saber que los _vertex programs_ trabajan con la información geométrica del objeto sobre el que queramos pintar y los _fragment programs_ pintan triángulos, básicamente.
+A nosotros nos basta saber que los _vertex programs_ trabajan con la información geométrica del objeto sobre el que queramos pintar y los _fragment programs_ pintan triángulos, básicamente
 
 ```c
 void frag(){
