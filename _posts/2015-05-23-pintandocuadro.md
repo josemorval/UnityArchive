@@ -9,6 +9,7 @@ published: true
 
 
 
+
 Las cosas en Unity se pintan usando [shaders](http://en.wikipedia.org/wiki/Shader): pequeños programas que le dicen a la tarjeta gráfica cómo pintar las cosas en la pantalla. 
 
 Estos programas se pueden escribir en distintos lenguajes ([GLSL](http://en.wikipedia.org/wiki/OpenGL_Shading_Language), [HLSL](http://en.wikipedia.org/wiki/High-Level_Shading_Language), etc...), y en el caso particular de Unity se usa [Cg](http://en.wikipedia.org/wiki/Cg_\(programming_language\)), como lenguaje de gráficos estándar.
@@ -94,6 +95,6 @@ Moviendo el quad que tiene el material asignado, en la pestaña **Scene**, obser
 
 Internamente, sabemos lo que esta pasando: los vértices del quad se están moviendo en el espacio, y por tanto los triángulos que generan, y como consecuencia final, la parte que _colorea_ el shader va cambiando.
 
-<div style='text-align:center;'> <iframe src="https://player.vimeo.com/video/43730150" width="500" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
+<div style='text-align:center;'> <iframe src="https://player.vimeo.com/video/128737027" width="500" height="721" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
 
 Este ejemplo, aunque es muy simple, deja entrever la potencia que hay detrás de los shader.
