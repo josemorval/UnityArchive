@@ -17,6 +17,6 @@ A nosotros nos basta saber que los _vertex programs_ trabajan con la informació
 
 Un ejemplo básico de vertex shader sería
 ```c
-float4 a = 1.0;
+int a = 1.0;
 ```
 
