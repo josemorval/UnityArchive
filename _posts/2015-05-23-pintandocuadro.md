@@ -4,8 +4,6 @@ title: Pintando un cuadro
 published: true
 ---
 
-##Empezando por lo básico
-
 Las cosas en Unity se pintan usando [shaders](http://en.wikipedia.org/wiki/Shader): pequeños programas que le dicen a la tarjeta gráfica cómo pintar las cosas en la pantalla. 
 
 Estos programas se pueden escribir en distintos lenguajes ([GLSL](http://en.wikipedia.org/wiki/OpenGL_Shading_Language), [HLSL](http://en.wikipedia.org/wiki/High-Level_Shading_Language), etc...), y en el caso particular de Unity se usa [Cg](http://en.wikipedia.org/wiki/Cg_\(programming_language\)), como lenguaje de gráficos estándar.
@@ -34,4 +32,7 @@ float4 frag() : COLOR
 ```
 
 Este programa pintaría el triángulo, sobre el que esté actuando, de color ```rgb(1.0,0.0,0.0)``` rojo. La última componente del ```float4``` se corresponde con la información de transparencia, que trataremos en otro post.
+
+##Vamos a lo práctico: llevando esto a Unity
+
 
