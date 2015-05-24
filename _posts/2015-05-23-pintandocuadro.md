@@ -17,9 +17,6 @@ A nosotros nos basta saber que los _vertex programs_ trabajan con la informació
 
 Un ejemplo básico de vertex shader sería
 ```c
-float4 vert(float4 vertexPos : POSITION) : SV_POSITION 
-{
-return mul(UNITY_MATRIX_MVP, vertexPos);
-}
+float4 a = 1.0;
 ```
 
