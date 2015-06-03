@@ -16,5 +16,9 @@ Pero, ¿y si queremos pintar el mismo cuadrado de varios colores? En particular,
 
 ##Información de los vértices
 
-<iframe id="" name="" src="https://dl.dropboxusercontent.com/u/3162276/Prototipo-TCTCOW/web.html" marginheight="0" frameborder="0" width="670" height="460" scrolling="no"></iframe>
+<div id="hola"></div>
+<javascript>
+$('#target-div').load('http://www.mywebsite.com/portfolio.php #portfolio-sports');
+</javascript>
+
 
