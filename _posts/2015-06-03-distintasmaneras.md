@@ -79,7 +79,7 @@ Por otro lado, el vertex shader tiene como output otra estructura ```v2f```, que
 
 El vertex shader se ejecuta una vez por vértice de la malla, devolviendo la estructura ```v2f```. Por otro lado el fragment shader tiene como input una estructura del tipo ```v2f```. 
 
-Esto parece un poco raro, ya que el fragment shader se ejecuta una vez por pixel, en el triángulo definido por tres vértices de la malla (de la triagulación). Entonces, ¿que valor ```v2f``` tomamos para cada pixel? 
+Esto parece un poco raro, ya que el fragment shader se ejecuta una vez por pixel, en el triángulo definido por tres vértices de la malla (no triángulos cualesquiera: triángulos de la **triangulación** de la malla). Entonces, ¿que valor ```v2f``` tomamos para cada pixel? 
 
 La respuesta es: **la interpolación entre los tres** ```v2f```.
 
