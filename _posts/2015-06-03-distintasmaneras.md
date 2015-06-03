@@ -5,4 +5,5 @@ layout: post
 ---
 
 
+
 En el post anterior pintamos un cuadrado de color rojo.
