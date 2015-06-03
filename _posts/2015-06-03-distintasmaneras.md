@@ -68,6 +68,8 @@ Shader "Morvaly/VertexColorShader" {
 }
 ```
 
+Vemos dos elementos que no habíamos introducido hasta ahora 
+
 
 
 
