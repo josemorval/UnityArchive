@@ -1,6 +1,7 @@
 ---
 published: true
 title: Distintas maneras de colorear
+layout: post
 ---
 
 
