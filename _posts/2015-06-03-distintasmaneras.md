@@ -7,6 +7,7 @@ layout: post
 
 
 
+
 En el post anterior pintamos un cuadrado de color rojo. Recordamos que era tan sencillo como escribir en el fragment shader la línea
 
 ```csharp
@@ -68,10 +69,4 @@ Shader "Morvaly/VertexColorShader" {
 }
 ```
 
-Vemos dos elementos que no habíamos introducido hasta ahora 
-
-
-
-
-
-
+Vemos dos elementos que no habíamos introducido hasta ahora: las estructuras ```struct```.
