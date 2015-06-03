@@ -72,3 +72,5 @@ Shader "Morvaly/VertexColorShader" {
 Vemos dos elementos que no habíamos introducido hasta ahora: las estructuras ```struct```. 
 
 Estas estructuras sirven como **inputs** del vertex shader y del fragment shader. En este caso, lo que _llega al vertex shader desde C#_ es la estructura ```appdata``` que contiene los atributos ```vertex``` y ```color```, definidos en la malla.
+
+Por otro lado, el vertex shader tiene como output otra estructura ```v2f```, que sirve como input para el fragment shader.
