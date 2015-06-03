@@ -1,6 +1,7 @@
 ---
 published: true
+title: Distintas maneras de colorear
 ---
 
 
-En esta entrada vamos a ver, con un par de ejemplos prácticos, las diferencias entre el vertex y el fragment shader.
+En el post anterior pintamos un cuadrado de color rojo.
