@@ -81,7 +81,7 @@ El vertex shader se ejecuta una vez por vértice de la malla, devolviendo la est
 
 Esto parece un poco raro, ya que el fragment shader se ejecuta una vez por pixel, en el triángulo definido por tres vértices de la malla (no triángulos cualesquiera: triángulos de la **triangulación** de la malla). Entonces, ¿que valor ```v2f``` tomamos para cada pixel? 
 
-La respuesta es: **la interpolación entre los tres** ```v2f```. Es decir, cuando definimos el fragment como
+La respuesta es: **la interpolación lineal entre los tres** ```v2f```. Es decir, cuando definimos el fragment como
 
 ```csharp
 float4 frag(v2f i) : COLOR {
