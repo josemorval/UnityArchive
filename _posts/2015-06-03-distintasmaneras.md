@@ -6,6 +6,7 @@ layout: post
 
 
 
+
 En el post anterior pintamos un cuadrado de color rojo. Recordamos que era tan sencillo como escribir en el fragment shader la línea
 
 ```csharp
@@ -16,9 +17,18 @@ Pero, ¿y si queremos pintar el mismo cuadrado de varios colores? En particular,
 
 ##Información de los vértices
 
-<div id="hola"></div>
-<javascript>
-$('#target-div').load('http://www.mywebsite.com/portfolio.php #portfolio-sports');
-</javascript>
+Los vértices de una malla pueden tener más información, además de la evidente, su posición. Entre otros atributos tenemos el **color** del vértice. Si por ejemplo, queremos asignar un color a cada vértice de un quad, bastaría añadir el siguiente script a este objeto
+
+```csharp
+	public Color[] colors;
+
+	void Start () {
+		Mesh m = GetComponent<MeshFilter>().mesh;
+		m.colors = colors;
+	}
+```
+
+donde el array de colores lo definimos en el inspector de Unity.
+
 
 
