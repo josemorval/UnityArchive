@@ -149,4 +149,4 @@ Shader "Morvaly/FragmentColorShader" {
 }
 ```
 
-En este shader hemos introducido un nuevi atributo ```uv``` de entrada para el vertex shader, de tipo ```TEXCOORD0```.
+En este shader hemos introducido un nuevo atributo ```uv``` de entrada para el vertex shader, de tipo ```TEXCOORD0```.
