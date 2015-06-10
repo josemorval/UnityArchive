@@ -9,6 +9,7 @@ layout: post
 
 
 
+
 En el post anterior pintamos un cuadrado de color rojo. Recordamos que era tan sencillo como escribir en el fragment shader la línea
 
 ```csharp
@@ -96,6 +97,6 @@ el input ```v2f i``` se refiere a la estructura interpolada para ese pixel.
 
 Haciendo esto, se tiene en Unity lo siguiente
 
-
+![_config.yml]({{ site.baseurl }}/images/distintos02.png)
 
 
