@@ -158,3 +158,4 @@ En nuestro caso, este mapa de coordenadas es tan sencillo como lo que se represe
 
 <center>![_config.yml]({{ site.baseurl }}/images/distintos03.png)</center>
 
+Es decir, cuatro valores, uno por vértice...¿por qué cuatro? Porque **el resto te los dará el fragment shader** interpolándolos.
