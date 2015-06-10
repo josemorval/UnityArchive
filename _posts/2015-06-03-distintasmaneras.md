@@ -180,7 +180,7 @@ return lerp(red,blue,0.5*(u+v));
 }
 ```
 
-A grandes rasgos, estamos copiando el funcionamiento del primer anterior, como puede verse en la línea final, en la que interpolamos a partir de dos colores en base al mapa de coordenadas.
+A grandes rasgos, estamos copiando el funcionamiento del primer anterior, como puede verse en la línea final, en la que interpolamos a partir de dos colores, ,```red``` y ```blue```, en base al mapa de coordenadas.
 
 ```csharp
 return lerp(red,blue,0.5*(u+v));
