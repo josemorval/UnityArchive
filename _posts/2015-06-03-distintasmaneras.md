@@ -101,3 +101,5 @@ Haciendo esto, se tiene en Unity lo siguiente
 <center>![_config.yml]({{ site.baseurl }}/images/distintos02.png)</center>
 
 Sencillamente hemos asignado un color a cada vértice, hemos asignado el shader anterior al material del quad y el resto se lo hemos dejado a la tarjeta gráfica.
+
+Esta manera de hacer el gradiente tiene un problema, y es que hemos necesitado cuatro colores (tres distintos)
