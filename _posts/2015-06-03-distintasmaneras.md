@@ -161,7 +161,7 @@ En nuestro caso, este mapa de coordenadas es tan sencillo como lo que se represe
 
 Es decir, cuatro valores, uno por vértice...
 
-<center>_¿por qué cuatro? ¿y las coordenadas para resto del triángulo?_</center>
+<center>_¿por qué cuatro? ¿y las coordenadas para el resto del triángulo?_</center>
 
 **Para el resto del triángulo entra de nuevo en acción el fragment shader**. Basta añadir a la estructura que se le pasa al fragment shader el atributo ```uv``` y la línea ```o.uv = float4( v.texcoord.xy, 0, 0 );``` al vertex shader y listo.
 
