@@ -12,6 +12,7 @@ layout: post
 
 
 
+
 En el post anterior pintamos un cuadrado de color rojo. Recordamos que era tan sencillo como escribir en el fragment shader la línea
 
 ```csharp
@@ -162,9 +163,9 @@ Es decir, cuatro valores, uno por vértice...
 
 <center>_¿por qué cuatro? ¿y las coordenadas para resto del triángulo?_</center>
 
-**Para el resto del triángulo entra de nuevo de acción el fragment shader**. Basta añadir a la estructura que se le pasa al fragment shader el atributo ```uv``` y la línea ```o.uv = float4( v.texcoord.xy, 0, 0 );``` al vertex shader y listo.
+**Para el resto del triángulo entra de nuevo en acción el fragment shader**. Basta añadir a la estructura que se le pasa al fragment shader el atributo ```uv``` y la línea ```o.uv = float4( v.texcoord.xy, 0, 0 );``` al vertex shader y listo.
 
-Si vemos el shader planteado con perspectiva, vemos una diferencia notable en el fragment shader, comparado con el escrito anteriormente: tiene bastante más lógica.
+Analizando con detenimiento el shader, vemos una diferencia notable en el fragment shader, comparado con el escrito anteriormente: tiene _bastante_ más lógica.
 
 ```csharp
 float4 frag(v2f i) : COLOR {
@@ -179,9 +180,8 @@ return lerp(red,blue,0.5*(u+v));
 }
 ```
 
-A grandes rasgos, estamos copiando el funcionamiento del primer anterior, como puede en la interpolación entre colores que hacemos en la línea final
+A grandes rasgos, estamos copiando el funcionamiento del primer anterior, como puede verse en la línea final, en la que interpolamos a partir de dos colores en base al mapa de coordenadas.
 
 ```csharp
 return lerp(red,blue,0.5*(u+v));
 ```
-
