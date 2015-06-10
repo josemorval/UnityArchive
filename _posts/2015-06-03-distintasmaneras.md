@@ -152,7 +152,9 @@ Shader "Morvaly/FragmentColorShader" {
 
 En este shader hemos introducido un nuevo atributo de entrada para el vertex shader ```uv```, de tipo ```TEXCOORD0```. Esta atributo contiene **el mapa de coordenadas de la malla**, lo que se resume en un par de números **(a,b)** en el intervalo **(0,1)** para cada vértice, _elegidos_ de manera coherente.
 
-Esta mapa de coordenadas es fundamental en la [**texturización**](http://en.wikipedia.org/wiki/Texture_mapping) de un malla
+Esta mapa de coordenadas es fundamental en la [**texturización**](http://en.wikipedia.org/wiki/Texture_mapping) de una malla.
+
+En nuestro caso, este mapa de coordenadas es tan sencillo como lo que se representa en la siguiente imagen
 
 <center>![_config.yml]({{ site.baseurl }}/images/distintos03.png)</center>
 
