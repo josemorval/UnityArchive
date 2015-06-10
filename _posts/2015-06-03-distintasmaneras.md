@@ -8,6 +8,7 @@ layout: post
 
 
 
+
 En el post anterior pintamos un cuadrado de color rojo. Recordamos que era tan sencillo como escribir en el fragment shader la línea
 
 ```csharp
@@ -91,4 +92,10 @@ float4 frag(v2f i) : COLOR {
 
 el input ```v2f i``` se refiere a la estructura interpolada para ese pixel. 
 
-**Esto mola**.
+**Esto mola**. Mola porque para hacer el gradiente que comentábamos al principio basta fijar un color por vértice y dejar que el fragment shader se ocupe del resto, ya que interpolará los colores.
+
+Haciendo esto, se tiene en Unity lo siguiente
+
+
+
+
