@@ -102,4 +102,4 @@ Haciendo esto, se tiene en Unity lo siguiente
 
 Sencillamente hemos asignado un color a cada vértice, hemos asignado el shader anterior al material del quad y el resto se lo hemos dejado a la tarjeta gráfica.
 
-Esta manera de hacer un gradiente tiene un problema, y es que hemos necesitado cuatro colores (tres distintos) para determinarlo, y en principio, solo se necesitan dos.
+Esta manera de hacer un gradiente tiene un problema, y es que hemos necesitado cuatro colores (tres distintos) para determinarlo, y en principio, _solo se necesitan_ dos.
