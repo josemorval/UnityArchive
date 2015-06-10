@@ -156,10 +156,10 @@ Esta mapa de coordenadas es fundamental en la [**texturización**](http://en.wik
 
 En nuestro caso, este mapa de coordenadas es tan sencillo como lo que se representa en la siguiente imagen
 
-<center>![_config.yml]({{ site.baseurl }}/images/distintos03.png)</center>
+<center>![_config.yml]({{ site.baseurl }}/images/distintos03.png)<\center>
 
 Es decir, cuatro valores, uno por vértice...
 
-<center>_¿por qué cuatro? ¿y el resto del triángulo?_<\center>
+<center>_¿por qué cuatro? ¿y el resto del triángulo?_</center>
 
 **El resto te los dará el fragment shader** interpolándolos.
