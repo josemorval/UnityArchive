@@ -11,6 +11,7 @@ layout: post
 
 
 
+
 En el post anterior pintamos un cuadrado de color rojo. Recordamos que era tan sencillo como escribir en el fragment shader la línea
 
 ```csharp
@@ -149,4 +150,4 @@ Shader "Morvaly/FragmentColorShader" {
 }
 ```
 
-En este shader hemos introducido un nuevo atributo de entrada para el vertex shader ```uv```, de tipo ```TEXCOORD0```. Esta atributo contiene 
+En este shader hemos introducido un nuevo atributo de entrada para el vertex shader ```uv```, de tipo ```TEXCOORD0```. Esta atributo contiene **el mapa de coordenadas de la malla**  
