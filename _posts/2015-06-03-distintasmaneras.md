@@ -150,7 +150,7 @@ Shader "Morvaly/FragmentColorShader" {
 }
 ```
 
-En este shader hemos introducido un nuevo atributo de entrada para el vertex shader ```uv```, de tipo ```TEXCOORD0```. Esta atributo contiene **el mapa de coordenadas de la malla**, lo que se resume en un par de números **(a,b)** en el intervalo **(0,1)** para cada vértice, _elegidos_ de manera coherente.
+En este shader hemos introducido un nuevo atributo de entrada para el vertex shader ```texcoord```, de tipo ```TEXCOORD0```. Esta atributo contiene **el mapa de coordenadas de la malla**, lo que se resume en un par de números **(a,b)** en el intervalo **(0,1)** para cada vértice, _elegidos_ de manera coherente.
 
 Esta mapa de coordenadas es fundamental en la [**texturización**](http://en.wikipedia.org/wiki/Texture_mapping) de una malla.
 
@@ -160,6 +160,7 @@ En nuestro caso, este mapa de coordenadas es tan sencillo como lo que se represe
 
 Es decir, cuatro valores, uno por vértice...
 
-<center>_¿por qué cuatro? ¿y el resto del triángulo?_</center>
+<center>_¿por qué cuatro? ¿y las coordenadas para resto del triángulo?_</center>
 
-**El resto te los dará el fragment shader** interpolándolos.
+**Para el resto del triángulo entra de nuevo de acción el fragment shader**. Basta añadir a la estructura que se le pasa al fragment shader el atributo ```uv``` y la línea ```o.uv = float4( v.texcoord.xy, 0, 0 );``` al vertex shader y listo.
+
