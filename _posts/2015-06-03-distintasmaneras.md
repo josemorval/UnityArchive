@@ -165,7 +165,7 @@ Es decir, cuatro valores, uno por vértice...
 
 **Para el resto del triángulo entra de nuevo en acción el fragment shader**. Basta añadir a la estructura que se le pasa al fragment shader el atributo ```uv``` y la línea ```o.uv = float4( v.texcoord.xy, 0, 0 );``` al vertex shader y listo.
 
-Si analizamos con detenimiento el fragment shader, y lo comparamos con el del primer ejemplo, vemos algo que conviene remarcar: este tiene _bastante_ más lógica.
+Si analizamos con detenimiento el fragment shader, y lo comparamos con el del primer ejemplo, vemos algo que cabe remarcar: este tiene _bastante_ más lógica.
 
 ```csharp
 float4 frag(v2f i) : COLOR {
