@@ -179,9 +179,6 @@ float v = i.uv.y;
 return lerp(red,blue,0.5*(u+v));
 }
 ```
+Por un lado definimos dos colores, ```red``` y ```blue```, y por otro usamos dos variables, ```u``` y ```v```, para los valores del mapa de coordenadas. Por último calculamos el color que tendrá el pixel del triángulo, interpolando entre los dos colores definidos, en base al mapa de coordenadas.
 
-A grandes rasgos, estamos copiando el funcionamiento del primer anterior, como puede verse en la línea final, en la que interpolamos a partir de dos colores, ,```red``` y ```blue```, en base a los valores ```u``` y ```v``` del mapa de coordenadas.
-
-```csharp
-return lerp(red,blue,0.5*(u+v));
-```
+Es decir, **hemos replicado el funcionamiento de nuestro primer shader**.
